@@ -6,12 +6,13 @@ import './App.css';
 const apiKey = 'tqhygffd5zvz';
 import { ChannelListContainer, ChannelContainer } from './components';
 const client = StreamChat.getInstance(apiKey);
+import 'stream-chat-react/dist/css/index.css';
 
 function App() {
  
 
   return (
-    <div className='app_wrapper'>
+    <div className='app__wrapper'>
         <Chat client={client} theme='team light'>
           <ChannelListContainer />
           <ChannelContainer />
